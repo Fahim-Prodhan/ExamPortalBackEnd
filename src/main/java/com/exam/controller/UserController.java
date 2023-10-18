@@ -73,7 +73,7 @@ public class UserController {
 
     //update api
     @ExceptionHandler(UserFoundException.class)
-    public ResponseEntity<?> exceptionHandeler(UserFoundException ex) {
+    public ResponseEntity<?> exceptionHandler(UserFoundException ex) {
         return new ResponseEntity<>( HttpStatus.FOUND);
     }
 
